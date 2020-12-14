@@ -1,0 +1,92 @@
+ .bg{
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+          }
+  .butn {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        padding: 10px 20px;        
+        border-color: white;
+        cursor: pointer;
+        width: 20%;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 90%;
+        background: #0000ff;
+        float: right;                  
+     margin: 10px 10px 0px 0px;
+    }
+    .butn:hover {
+     opacity:1;
+    }
+    
+    a:link, a:visited {
+      
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      
+    }
+    .buttn{
+        width: 100px;
+        height: 40px;
+        padding: 5px;
+        margin-left: 10px;
+        cursor: pointer;
+        font-weight:bold;
+        font-size: 90%;
+        background: #cfb027;
+        color: rgb(17, 1, 1);             
+        font-family: Arial, Helvetica, sans-serif;
+        border-color: silver;
+        
+              
+    }
+    
+    .logo{
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    color: #112fb4;
+    margin: auto;
+    text-decoration: none;
+    margin: 10px 10px 0px 10px;    
+    }
+    .msg{
+
+        font-family: 'Marck Script', cursive;
+        margin-top: 0;
+        margin: 0 0 0px 10px;
+    }
+    .text-center{
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform:translate(-50%);
+        width:60%;
+        text-decoration: none;
+        border-color:white;
+    }
+    @media screen and (max-width:600px) {
+      #id03{
+        width:220%;
+        margin-right:300px;
+        padding-right:20%;
+        padding-left:20%;
+        transform:translate(-28%);
+      }
+      #id02{
+        width:300%;
+        margin-right:300px;
+        padding-right:18% 20% 18% 20%;
+        transform:translate(-33%);
+      }
+      #id01{
+        width:300%;
+        margin-right:300px;
+        padding-right:18% 20% 18% 20%;
+        transform:translate(-33%);
+      }
+    }
+    
+  

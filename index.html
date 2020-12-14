@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to scribbler</title>
+    <link rel="stylesheet" href="CSS/index.css" type="text/css">
+    <link rel="stylesheet" href="CSS/header.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+                                                <!--Background Image-->
+
+<body class="bg" background="image/background.jpg">
+                                                 <!--signup and signin button-->
+    <div class="header">
+        <button class="butn" type="button" class="btn btn-primary"
+            onclick="document.getElementById('id01').style.display='block'" style="width:auto;">sign up</button>
+
+        <button class="butn" type="button" class="btn btn-primary"
+            onclick="document.getElementById('id02').style.display='block'" style="width:auto;">sign in</button>
+        <p class="logo">ScriBBler</p>
+        <p class="msg">Explore,Imagine,Create</p>
+    </div>
+                                             <!--All Post AND Create Post Button-->
+    <div class="text-center">
+        <button type="button" class="buttn"  class=" btn-warning btn-lg" onclick="window.location.href='html/bloglist.html'">All
+            Posts</a></button>
+        <button type="button" class="buttn"class=" btn-warning btn-lg" id="create-btn"
+            onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Create
+            Posts</a></button>
+    </div>
+                                                      <!--Sign up form-->
+
+    <div id="id01" class="modal">
+        <div class="modalContent animate">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <div class="container-signup">
+                <div class="modalHeader">
+                    <strong>Get Started</strong>
+                </div>
+                <div class="modalBody">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label><b>Full Name</b></label>
+                            <input type="text" class="formStyle" placeholder="Enter Full Name" name="Full Name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label><b>User Name</b></label>
+                            <input type="text" class="formStyle" placeholder="User Name" name="User Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label><b>Password</b></label>
+                            <input type="password" class="formStyle" placeholder="Enter Password" name="psw" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label><b>Confirm Password</b></label>
+                            <input type="password" class="formStyle" placeholder="Confirm Password" name="psw-confirm"
+                                required>
+                        </div>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                           <!--Signin form-->
+
+    <div id="id02" class="modal">
+        <div class="modalContent animate">
+
+            <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <div class="container-signin">
+                <div class="modalHeader">
+                    <strong>Welcome Back!</strong>
+                </div>
+                <div class="modalBody">
+
+                    <form>
+                        <div class="form-group">
+                            <label><b>Email</b></label>
+                            <input type="text" class="formStyle" placeholder="Enter Email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label><b>Password</b></label>
+                            <input type="password" class="formStyle" placeholder="Enter Password" name="psw" required>
+                        </div>
+                        <button type="submit" class="signinbtn">Sign In</button>
+
+                    </form>
+
+                    <h6 style="margin: 10px; text-align: center; font-weight: 600;">Not a member? <a href="#"
+                            id="resignup" style="color: blue;">Sign Up</a></h6>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+                                     <!--Create Button Works-->
+    <div id="id03" class="modal">
+        <div class="modalContent animate" style="width:50%;">
+            <span onclick="document.getElementById('id03').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <div class="container-create">
+
+                <div class="modalHeader" style="border-bottom:none ;">
+                    <strong>Pen Your Post</strong>
+                </div>
+                <div class="modalBody">
+                    <form>
+                        <div class="form-group">
+                            <label><b>Title:</b></label>
+                            <input type="text" class="formStyle">
+                        </div>
+
+                        <div class="form-group">
+                            <label><b>Content:</b></label>
+                            <textarea rows="10" cols="50" class="formStyle"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-success" class="penup" style="margin: 10px 43%;">Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/header.js"></script>
+</body>
+
+</html>

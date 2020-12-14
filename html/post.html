@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloglist</title>
+    <link rel="stylesheet" href="../css/post.css">
+    <script src="../js/post.js"></script>
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/header.css" type="text/css">
+    <link rel="stylesheet" href="../css/bloglist.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+
+</head>
+
+
+<body>
+                                       <!--For header-->
+
+
+    <div class="header">
+        <button class="butn" type="button" class="btn btn-primary"
+            onclick="document.getElementById('id01').style.display='block'" style="width:auto;">sign up</button>
+
+        <button class="butn" type="button" class="btn btn-primary"
+            onclick="document.getElementById('id02').style.display='block'" style="width:auto;">sign in</button>
+        <p class="logo">ScriBBler</p>
+        <p class="msg" style="color:black;">Explore,Imagine,Create</p>
+    </div>
+
+                                        <!-- sign up Form -->
+
+
+    <div id="id01" class="modal">
+        <div class="modalContent animate">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <div class="container-signup">
+                <div class="modalHeader">
+                    <strong>Get Started</strong>
+                </div>
+                <div class="modalBody">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label><b>Full Name</b></label>
+                            <input type="text" class="formStyle" placeholder="Enter Full Name" name="Full Name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label><b>User Name</b></label>
+                            <input type="text" class="formStyle" placeholder="User Name" name="User Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label><b>Password</b></label>
+                            <input type="password" class="formStyle" placeholder="Enter Password" name="psw" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label><b>Confirm Password</b></label>
+                            <input type="password" class="formStyle" placeholder="Confirm Password" name="psw-confirm"
+                                required>
+                        </div>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+                                            
+                                                 <!--Sign In Form-->
+
+
+    <div id="id02" class="modal">
+        <div class="modalContent animate">
+
+            <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <div class="container-signin">
+                <div class="modalHeader">
+                    <strong>Welcome Back!</strong>
+                </div>
+                <div class="modalBody">
+
+                    <form>
+                        <div class="form-group">
+                            <label><b>Email</b></label>
+                            <input type="text" class="formStyle" placeholder="Enter Email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label><b>Password</b></label>
+                            <input type="password" class="formStyle" placeholder="Enter Password" name="psw" required>
+                        </div>
+                        <button type="submit" class="signinbtn">Sign In</button>
+
+                    </form>
+
+                    <h6 style="margin: 10px; text-align: center; font-weight: 600;">Not a member? <a href="#"
+                            id="resignup" style="color: blue;">Sign Up</a></h6>
+                </div>
+
+            </div>
+        </div>
+    </div>
+                                              <!--Post content-->
+
+    <div class="post">
+        <div class="post col">
+           
+           <div class="post-title" contenteditable="true"><h1>The legacy of Jimi Hendrix</h1></div>
+        </div>
+    </div>
+    <div class="row top-space  space-around-post">
+        <div class="col-6 author-name">
+                                                        <!-- Author Name -->
+           <i> <strong id="name-of-author">Jimi</strong></i>
+        </div>
+        <div>
+                                           <!-- edit and save Working Snippet-->
+
+            <button class="buttonedit" id="editButton" onclick="edit_and_save();"><span class="button-text" id="buttonText">Edit</span> 
+                <i class="fa fa-edit" id="buttonSymbol" style="padding-left: 5px; color: white; background-color:#EF3B65;"></i>
+            </button>
+        </div>
+    </div>
+   
+    <div class="row">
+                                               
+        
+                                                <!--Author post content-->
+
+        <div class="col space-around-post">
+            <p class="post-look" id="postContent" contenteditable="false">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had even ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres including blues, R&amp;B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in main stream rock.[348] He rejected the standard barre chord fretting techniques used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and other fingers playing melody as right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling stone commented: "Hendrix pioneered the use of the instrument as an electric sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb42] Aledort wrote: "In rock guitar, there are but two eras &mdash; before Hendrix and after Hendrix."
+            </p>
+        </div>
+    </div>
+    <div class="row button-top-space">
+        <div class="col space-around-post">
+            <div>
+                                               
+                                                   <!-- like button -->
+
+                <button class="like-Button button-text" id="likebutton" onclick="likeUpdate();">
+                    
+                    <i class="fa fa-thumbs-up" style="padding-left: 5px; color: white; background-color:#ff0066;"></i>
+                    <span id="likeButton">Like</span> 
+                </button>
+            </div>
+                                           <!-- How much people like the post content -->
+            <div id="like-active">
+               <b> Be the first one to like this!</b>
+                   
+                                               
+            </div>
+        </div>
+    </div>
+    <div class="row top-space">
+        <div class="col space-around-post">
+           
+                                  <!-- comment button's Snippet ACtivation Snippet -->
+
+  <textarea id="usercomment" value="" rows="5" placeholder="Leave a comment..."></textarea>
+  
+  <button class="comment-button" onclick='addcomment(usercomment)'>Comment</button>
+  <!-- code of comment area -->
+  <h3>All Comment</h3>
+  <div class="commentactivation">
+      <div id="comment-Add-activation">
+
+      </div>
+    </div>
+               
+</div>
+  
+
+
+
+
+
+
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+     crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+     crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+     crossorigin="anonymous"></script>
+ <script src="../js/header.js"></script>
+ <script src="../js/post.js"></script>
+</body>
+
+</html>
